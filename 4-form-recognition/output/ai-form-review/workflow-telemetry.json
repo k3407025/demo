@@ -1,0 +1,481 @@
+{
+  "schemaVersion": 1,
+  "runId": "form-20260907-k8q",
+  "goalPath": "/Users/bennylee/Documents/hkmca/lenovo_pgx/demo/4-form-recognition/output/ai-form-review/goal.json",
+  "workflowStartedAt": "2026-09-07T14:44:56.653Z",
+  "workflowFinishedAt": "2026-09-07T14:56:04.389Z",
+  "wallClockDurationMs": 667736,
+  "commandDurationMs": 8217,
+  "stageGapDurationMs": 659713,
+  "updatedAt": "2026-09-07T14:56:04.390Z",
+  "stages": {
+    "scaffold": {
+      "stage": "scaffold",
+      "kind": "scaffold",
+      "command": "goal:scaffold",
+      "attempts": [
+        {
+          "sequence": 1,
+          "command": "goal:scaffold",
+          "kind": "scaffold",
+          "runId": "form-20260907-k8q",
+          "status": "failed",
+          "retry": false,
+          "startedAt": "2026-09-07T14:44:56.653Z",
+          "finishedAt": "2026-09-07T14:44:57.030Z",
+          "durationMs": 377,
+          "gapSincePreviousMs": 0,
+          "failureReason": "Insufficient compatible layouts in theme01: slide 1 role \"cover\" requires 3, available 1/1"
+        },
+        {
+          "sequence": 2,
+          "command": "goal:scaffold",
+          "kind": "scaffold",
+          "runId": "form-20260907-k8q",
+          "status": "failed",
+          "retry": true,
+          "startedAt": "2026-09-07T14:45:15.406Z",
+          "finishedAt": "2026-09-07T14:45:15.749Z",
+          "durationMs": 343,
+          "gapSincePreviousMs": 18376,
+          "failureReason": "Insufficient compatible layouts in theme01: slide 1 role \"cover\" requires 3, available 1/1"
+        },
+        {
+          "sequence": 3,
+          "command": "goal:scaffold",
+          "kind": "scaffold",
+          "runId": "form-20260907-k8q",
+          "status": "failed",
+          "retry": true,
+          "startedAt": "2026-09-07T14:45:29.146Z",
+          "finishedAt": "2026-09-07T14:45:29.494Z",
+          "durationMs": 348,
+          "gapSincePreviousMs": 13397,
+          "failureReason": "Insufficient compatible layouts in theme01: slide 1 role \"cover\" requires 3, available 1/1"
+        },
+        {
+          "sequence": 4,
+          "command": "goal:scaffold",
+          "kind": "scaffold",
+          "runId": "form-20260907-k8q",
+          "status": "failed",
+          "retry": true,
+          "startedAt": "2026-09-07T14:45:53.812Z",
+          "finishedAt": "2026-09-07T14:45:54.200Z",
+          "durationMs": 388,
+          "gapSincePreviousMs": 24318,
+          "failureReason": "Scaffold failed goal spec validation: - slide 2 variant v1 layout theme01_page043 field props: repeated visible copy \"Twopages.Oneinconsistency.\" appears 6 times (props.title, props.kicker, props.left.stat, props.left.statLabel, props.right.tag, props.right.unit); vary list items or shorten repeated labels - slide 2 variant v1 layout theme01_page043 field props: repeated visible copy \"CROSS-PAGEEVIDENCE\" appears 5 times (props.left.tag, props.left.unit, props.right.en, props.right.statLabel, props.verdict); vary list items or shorten repeated labels"
+        },
+        {
+          "sequence": 5,
+          "command": "goal:scaffold",
+          "kind": "scaffold",
+          "runId": "form-20260907-k8q",
+          "status": "failed",
+          "retry": true,
+          "startedAt": "2026-09-07T14:46:19.071Z",
+          "finishedAt": "2026-09-07T14:46:19.458Z",
+          "durationMs": 387,
+          "gapSincePreviousMs": 24871,
+          "failureReason": "Scaffold failed goal spec validation: - slide 3 variant v1 layout theme01_page043 field props: repeated visible copy \"AIflagstheissueforreview\" appears 7 times (props.title, props.kicker, props.left.stat, props.left.statLabel, props.right.tag, props.right.unit); vary list items or shorten repeated labels - slide 3 variant v1 layout theme01_page043 field props: repeated visible copy \"ACTUALDEMORESULT\" appears 5 times (props.en, props.left.tag, props.left.unit, props.right.en, props.right.statLabel); vary list items or shorten repeated labels"
+        },
+        {
+          "sequence": 6,
+          "command": "goal:scaffold",
+          "kind": "scaffold",
+          "runId": "form-20260907-k8q",
+          "status": "passed",
+          "retry": true,
+          "startedAt": "2026-09-07T14:46:31.871Z",
+          "finishedAt": "2026-09-07T14:46:32.225Z",
+          "durationMs": 354,
+          "gapSincePreviousMs": 12413,
+          "metrics": {
+            "layoutQueryCount": 3,
+            "allocation": {
+              "candidateCounts": [
+                {
+                  "slide": 1,
+                  "role": "cover",
+                  "compatible": 3,
+                  "eligible": 3
+                },
+                {
+                  "slide": 2,
+                  "role": "image",
+                  "compatible": 10,
+                  "eligible": 10
+                },
+                {
+                  "slide": 3,
+                  "role": "closing",
+                  "compatible": 16,
+                  "eligible": 16
+                }
+              ],
+              "uniqueLayoutCount": 9,
+              "maximumReuse": 1,
+              "familyDiversity": {
+                "uniqueCount": 4,
+                "families": [
+                  "cards",
+                  "case-study",
+                  "hero",
+                  "sequence"
+                ],
+                "perSlide": [
+                  {
+                    "slide": 1,
+                    "uniqueCount": 1
+                  },
+                  {
+                    "slide": 2,
+                    "uniqueCount": 2
+                  },
+                  {
+                    "slide": 3,
+                    "uniqueCount": 3
+                  }
+                ]
+              },
+              "compositionDiversity": {
+                "uniqueCount": 7,
+                "perSlide": [
+                  {
+                    "slide": 1,
+                    "uniqueCount": 1
+                  },
+                  {
+                    "slide": 2,
+                    "uniqueCount": 3
+                  },
+                  {
+                    "slide": 3,
+                    "uniqueCount": 3
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "commandCount": 6,
+      "successCount": 1,
+      "failureCount": 5,
+      "retryCount": 5,
+      "totalDurationMs": 2197,
+      "lastDurationMs": 354,
+      "lastFailureReason": "Scaffold failed goal spec validation: - slide 3 variant v1 layout theme01_page043 field props: repeated visible copy \"AIflagstheissueforreview\" appears 7 times (props.title, props.kicker, props.left.stat, props.left.statLabel, props.right.tag, props.right.unit); vary list items or shorten repeated labels - slide 3 variant v1 layout theme01_page043 field props: repeated visible copy \"ACTUALDEMORESULT\" appears 5 times (props.en, props.left.tag, props.left.unit, props.right.en, props.right.statLabel); vary list items or shorten repeated labels"
+    },
+    "props-safe": {
+      "stage": "props-safe",
+      "kind": "normalize",
+      "command": "props:safe",
+      "attempts": [
+        {
+          "sequence": 7,
+          "command": "props:safe",
+          "kind": "normalize",
+          "runId": "form-20260907-k8q",
+          "status": "passed",
+          "retry": false,
+          "startedAt": "2026-09-07T14:48:06.609Z",
+          "finishedAt": "2026-09-07T14:48:06.760Z",
+          "durationMs": 151,
+          "gapSincePreviousMs": 94384,
+          "metrics": {
+            "layoutChangeCount": 0,
+            "propErrorCount": 0,
+            "goalSpecErrorCount": 0
+          }
+        },
+        {
+          "sequence": 9,
+          "command": "props:safe",
+          "kind": "normalize",
+          "runId": "form-20260907-k8q",
+          "status": "passed",
+          "retry": false,
+          "startedAt": "2026-09-07T14:49:32.996Z",
+          "finishedAt": "2026-09-07T14:49:33.139Z",
+          "durationMs": 143,
+          "gapSincePreviousMs": 86031,
+          "metrics": {
+            "layoutChangeCount": 0,
+            "propErrorCount": 0,
+            "goalSpecErrorCount": 0
+          }
+        },
+        {
+          "sequence": 13,
+          "command": "props:safe",
+          "kind": "normalize",
+          "runId": "form-20260907-k8q",
+          "status": "passed",
+          "retry": false,
+          "startedAt": "2026-09-07T14:50:28.524Z",
+          "finishedAt": "2026-09-07T14:50:28.667Z",
+          "durationMs": 143,
+          "gapSincePreviousMs": 49614,
+          "metrics": {
+            "layoutChangeCount": 0,
+            "propErrorCount": 0,
+            "goalSpecErrorCount": 0
+          }
+        },
+        {
+          "sequence": 17,
+          "command": "props:safe",
+          "kind": "normalize",
+          "runId": "form-20260907-k8q",
+          "status": "passed",
+          "retry": false,
+          "startedAt": "2026-09-07T14:56:04.248Z",
+          "finishedAt": "2026-09-07T14:56:04.389Z",
+          "durationMs": 141,
+          "gapSincePreviousMs": 281691,
+          "metrics": {
+            "layoutChangeCount": 0,
+            "propErrorCount": 0,
+            "goalSpecErrorCount": 0
+          }
+        }
+      ],
+      "commandCount": 4,
+      "successCount": 4,
+      "failureCount": 0,
+      "retryCount": 0,
+      "totalDurationMs": 578,
+      "lastDurationMs": 141,
+      "lastFailureReason": null
+    },
+    "validate-goal-spec": {
+      "stage": "validate-goal-spec",
+      "kind": "validate",
+      "command": "validate:goal-spec",
+      "attempts": [
+        {
+          "sequence": 8,
+          "command": "validate:goal-spec",
+          "kind": "validate",
+          "runId": "form-20260907-k8q",
+          "status": "passed",
+          "retry": false,
+          "startedAt": "2026-09-07T14:48:06.854Z",
+          "finishedAt": "2026-09-07T14:48:06.965Z",
+          "durationMs": 111,
+          "gapSincePreviousMs": 94
+        },
+        {
+          "sequence": 10,
+          "command": "validate:goal-spec",
+          "kind": "validate",
+          "runId": "form-20260907-k8q",
+          "status": "passed",
+          "retry": false,
+          "startedAt": "2026-09-07T14:49:34.741Z",
+          "finishedAt": "2026-09-07T14:49:34.836Z",
+          "durationMs": 95,
+          "gapSincePreviousMs": 1602
+        },
+        {
+          "sequence": 14,
+          "command": "validate:goal-spec",
+          "kind": "validate",
+          "runId": "form-20260907-k8q",
+          "status": "passed",
+          "retry": false,
+          "startedAt": "2026-09-07T14:50:29.665Z",
+          "finishedAt": "2026-09-07T14:50:29.763Z",
+          "durationMs": 98,
+          "gapSincePreviousMs": 998
+        }
+      ],
+      "commandCount": 3,
+      "successCount": 3,
+      "failureCount": 0,
+      "retryCount": 0,
+      "totalDurationMs": 304,
+      "lastDurationMs": 98,
+      "lastFailureReason": null
+    },
+    "render": {
+      "stage": "render",
+      "kind": "render",
+      "command": "render:goal",
+      "attempts": [
+        {
+          "sequence": 11,
+          "command": "render:goal",
+          "kind": "render",
+          "runId": "form-20260907-k8q",
+          "status": "passed",
+          "retry": false,
+          "startedAt": "2026-09-07T14:49:34.740Z",
+          "finishedAt": "2026-09-07T14:49:34.973Z",
+          "durationMs": 233,
+          "gapSincePreviousMs": 0
+        },
+        {
+          "sequence": 15,
+          "command": "render:goal",
+          "kind": "render",
+          "runId": "form-20260907-k8q",
+          "status": "passed",
+          "retry": false,
+          "startedAt": "2026-09-07T14:50:29.665Z",
+          "finishedAt": "2026-09-07T14:50:29.908Z",
+          "durationMs": 243,
+          "gapSincePreviousMs": 0
+        }
+      ],
+      "commandCount": 2,
+      "successCount": 2,
+      "failureCount": 0,
+      "retryCount": 0,
+      "totalDurationMs": 476,
+      "lastDurationMs": 243,
+      "lastFailureReason": null
+    },
+    "validate-four-variant-quality": {
+      "stage": "validate-four-variant-quality",
+      "kind": "validate",
+      "command": "validate:four-variant-quality",
+      "attempts": [
+        {
+          "sequence": 12,
+          "command": "validate:four-variant-quality",
+          "kind": "validate",
+          "runId": "form-20260907-k8q",
+          "status": "failed",
+          "retry": false,
+          "startedAt": "2026-09-07T14:49:35.755Z",
+          "finishedAt": "2026-09-07T14:49:38.910Z",
+          "durationMs": 3155,
+          "gapSincePreviousMs": 782,
+          "failureReason": "group=0, bespokeClip=4, dependency=0, browser=0, hydrated=3/3"
+        },
+        {
+          "sequence": 16,
+          "command": "validate:four-variant-quality",
+          "kind": "validate",
+          "runId": "form-20260907-k8q",
+          "status": "failed",
+          "retry": true,
+          "startedAt": "2026-09-07T14:51:21.050Z",
+          "finishedAt": "2026-09-07T14:51:22.557Z",
+          "durationMs": 1507,
+          "gapSincePreviousMs": 51142,
+          "failureReason": "group=0, bespokeClip=4, dependency=0, browser=0, hydrated=3/3"
+        }
+      ],
+      "commandCount": 2,
+      "successCount": 0,
+      "failureCount": 2,
+      "retryCount": 1,
+      "totalDurationMs": 4662,
+      "lastDurationMs": 1507,
+      "lastFailureReason": "group=0, bespokeClip=4, dependency=0, browser=0, hydrated=3/3"
+    }
+  },
+  "commandCounts": {
+    "scaffold": 6,
+    "normalize": 4,
+    "validate": 5,
+    "render": 2
+  },
+  "failureCount": 7,
+  "retryCount": 6,
+  "failures": [
+    {
+      "sequence": 1,
+      "stage": "scaffold",
+      "kind": "scaffold",
+      "reason": "Insufficient compatible layouts in theme01: slide 1 role \"cover\" requires 3, available 1/1"
+    },
+    {
+      "sequence": 2,
+      "stage": "scaffold",
+      "kind": "scaffold",
+      "reason": "Insufficient compatible layouts in theme01: slide 1 role \"cover\" requires 3, available 1/1"
+    },
+    {
+      "sequence": 3,
+      "stage": "scaffold",
+      "kind": "scaffold",
+      "reason": "Insufficient compatible layouts in theme01: slide 1 role \"cover\" requires 3, available 1/1"
+    },
+    {
+      "sequence": 4,
+      "stage": "scaffold",
+      "kind": "scaffold",
+      "reason": "Scaffold failed goal spec validation: - slide 2 variant v1 layout theme01_page043 field props: repeated visible copy \"Twopages.Oneinconsistency.\" appears 6 times (props.title, props.kicker, props.left.stat, props.left.statLabel, props.right.tag, props.right.unit); vary list items or shorten repeated labels - slide 2 variant v1 layout theme01_page043 field props: repeated visible copy \"CROSS-PAGEEVIDENCE\" appears 5 times (props.left.tag, props.left.unit, props.right.en, props.right.statLabel, props.verdict); vary list items or shorten repeated labels"
+    },
+    {
+      "sequence": 5,
+      "stage": "scaffold",
+      "kind": "scaffold",
+      "reason": "Scaffold failed goal spec validation: - slide 3 variant v1 layout theme01_page043 field props: repeated visible copy \"AIflagstheissueforreview\" appears 7 times (props.title, props.kicker, props.left.stat, props.left.statLabel, props.right.tag, props.right.unit); vary list items or shorten repeated labels - slide 3 variant v1 layout theme01_page043 field props: repeated visible copy \"ACTUALDEMORESULT\" appears 5 times (props.en, props.left.tag, props.left.unit, props.right.en, props.right.statLabel); vary list items or shorten repeated labels"
+    },
+    {
+      "sequence": 12,
+      "stage": "validate-four-variant-quality",
+      "kind": "validate",
+      "reason": "group=0, bespokeClip=4, dependency=0, browser=0, hydrated=3/3"
+    },
+    {
+      "sequence": 16,
+      "stage": "validate-four-variant-quality",
+      "kind": "validate",
+      "reason": "group=0, bespokeClip=4, dependency=0, browser=0, hydrated=3/3"
+    }
+  ],
+  "repeatedStages": [
+    {
+      "stage": "scaffold",
+      "kind": "scaffold",
+      "command": "goal:scaffold",
+      "commandCount": 6,
+      "failureCount": 5,
+      "retryCount": 5
+    },
+    {
+      "stage": "props-safe",
+      "kind": "normalize",
+      "command": "props:safe",
+      "commandCount": 4,
+      "failureCount": 0,
+      "retryCount": 0
+    },
+    {
+      "stage": "validate-goal-spec",
+      "kind": "validate",
+      "command": "validate:goal-spec",
+      "commandCount": 3,
+      "failureCount": 0,
+      "retryCount": 0
+    },
+    {
+      "stage": "render",
+      "kind": "render",
+      "command": "render:goal",
+      "commandCount": 2,
+      "failureCount": 0,
+      "retryCount": 0
+    },
+    {
+      "stage": "validate-four-variant-quality",
+      "kind": "validate",
+      "command": "validate:four-variant-quality",
+      "commandCount": 2,
+      "failureCount": 2,
+      "retryCount": 1
+    }
+  ],
+  "metrics": {
+    "layoutQueryCount": 3,
+    "layoutChangeCount": 0,
+    "propErrorCount": 0,
+    "goalSpecErrorCount": 0
+  }
+}

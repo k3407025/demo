@@ -1,0 +1,123 @@
+[
+  {
+    "role": "cover",
+    "priority": "story",
+    "content": {
+      "presentation": {
+        "title": "AI Form Review",
+        "titleShort": "AI Form Review",
+        "summary": "Read across pages. Apply a rule.",
+        "summaryShort": "Read. Compare. Flag.",
+        "takeaway": "Visible evidence. Clear review.",
+        "items": [
+          {
+            "id": "read",
+            "label": "Read pages",
+            "value": "Read",
+            "required": true
+          },
+          {
+            "id": "compare",
+            "label": "Apply rule",
+            "value": "Compare",
+            "required": true
+          },
+          {
+            "id": "flag",
+            "label": "Human review",
+            "value": "Flag",
+            "required": true
+          }
+        ]
+      },
+      "meta": {
+        "brand": "ABC Limited",
+        "panelTitle": "FORM REVIEW DEMO",
+        "date": "Synthetic application"
+      }
+    }
+  },
+  {
+    "role": "image",
+    "priority": "comparison",
+    "content": {
+      "presentation": {
+        "title": "Two pages. One inconsistency.",
+        "titleShort": "Two-page evidence",
+        "summary": "Page 1 selects Local Bank Account. Page 3 contains a signature in the Chinese Mainland declaration.",
+        "summaryShort": "Local account selected; Mainland declaration signed.",
+        "takeaway": "Rule: for a local account, the Mainland declaration signature and date must remain blank.",
+        "items": [
+          {
+            "id": "local",
+            "label": "Local account",
+            "value": "Selected",
+            "detail": "Page 1: Local Bank Account is checked.",
+            "required": true
+          },
+          {
+            "id": "sig",
+            "label": "Mainland signature",
+            "value": "Present",
+            "detail": "Page 3: Signature and date should be blank.",
+            "required": true
+          }
+        ]
+      },
+      "media": [
+        {
+          "src": "assets/user-media/wrong-1.png",
+          "alt": "Page 1: Local Bank Account selected"
+        },
+        {
+          "src": "assets/user-media/wrong-3.png",
+          "alt": "Page 3: Mainland declaration incorrectly signed"
+        }
+      ],
+      "meta": {
+        "brand": "ABC Limited",
+        "panelTitle": "CROSS-PAGE EVIDENCE"
+      }
+    }
+  },
+  {
+    "role": "image",
+    "priority": "story",
+    "content": {
+      "presentation": {
+        "title": "AI flags the issue for review",
+        "titleShort": "Review required",
+        "summary": "The captured result links the account choice to the misplaced signature and date.",
+        "summaryShort": "Evidence linked to a clear review action.",
+        "takeaway": "Review and correct before processing. A person confirms the action.",
+        "items": [
+          {
+            "id": "finding",
+            "label": "Rule result",
+            "value": "Review",
+            "detail": "The local selection conflicts with the declaration signature.",
+            "required": true
+          },
+          {
+            "id": "action",
+            "label": "Next action",
+            "value": "Correct",
+            "detail": "A reviewer confirms and corrects before processing.",
+            "required": true
+          }
+        ]
+      },
+      "media": [
+        {
+          "src": "assets/user-media/codex-clipboard-0c4d3899-8f96-4d8b-a8c1-4dfef288293d.png",
+          "alt": "Actual AI result: review required"
+        }
+      ],
+      "meta": {
+        "brand": "ABC Limited",
+        "panelTitle": "ACTUAL DEMO RESULT",
+        "date": "This check identifies an inconsistency, not its root cause."
+      }
+    }
+  }
+]

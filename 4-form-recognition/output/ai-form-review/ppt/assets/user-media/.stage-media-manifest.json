@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "sourceId": "dfcf4218faf4",
+      "relative": "assets/user-media/wrong-1.png",
+      "kind": "image",
+      "mime": "image/png"
+    },
+    {
+      "sourceId": "20dea4f6db36",
+      "relative": "assets/user-media/codex-clipboard-0c4d3899-8f96-4d8b-a8c1-4dfef288293d.png",
+      "kind": "image",
+      "mime": "image/png"
+    },
+    {
+      "sourceId": "ee590fb57a05",
+      "relative": "assets/user-media/wrong-3.png",
+      "kind": "image",
+      "mime": "image/png"
+    },
+    {
+      "sourceId": "96bd1180447d",
+      "relative": "assets/user-media/local-choice.png",
+      "kind": "image",
+      "mime": "image/png"
+    },
+    {
+      "sourceId": "68401e1cee22",
+      "relative": "assets/user-media/declaration-signature.png",
+      "kind": "image",
+      "mime": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,1039 @@
+{
+  "schemaVersion": 2,
+  "variantOutputMode": "selected-only",
+  "title": "AI Form Review",
+  "goal": "Three slides demonstrating cross-page evidence, a supplied business rule, and a clear review action",
+  "themePack": "theme01",
+  "pageCount": 3,
+  "randomSeed": "form-20260907-k8q",
+  "workflowRunId": "form-20260907-k8q",
+  "slides": [
+    {
+      "content": {
+        "presentation": {
+          "title": "AI Form Review",
+          "titleShort": "AI Form Review",
+          "summary": "Read across pages. Apply a rule.",
+          "summaryShort": "Read. Compare. Flag.",
+          "takeaway": "Visible evidence. Clear review.",
+          "items": [
+            {
+              "id": "read",
+              "label": "Read pages",
+              "value": "Read",
+              "required": true,
+              "detail": "",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "Read",
+              "valueText": "Read",
+              "labelWithValue": "Read · Read pages",
+              "labelWithSupporting": "Read pages",
+              "labelWithValueAndSupporting": "Read · Read pages"
+            },
+            {
+              "id": "compare",
+              "label": "Apply rule",
+              "value": "Compare",
+              "required": true,
+              "detail": "",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "Compare",
+              "valueText": "Compare",
+              "labelWithValue": "Compare · Apply rule",
+              "labelWithSupporting": "Apply rule",
+              "labelWithValueAndSupporting": "Compare · Apply rule"
+            },
+            {
+              "id": "flag",
+              "label": "Human review",
+              "value": "Flag",
+              "required": true,
+              "detail": "",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "Flag",
+              "valueText": "Flag",
+              "labelWithValue": "Flag · Human review",
+              "labelWithSupporting": "Human review",
+              "labelWithValueAndSupporting": "Flag · Human review"
+            }
+          ],
+          "coverLabels": [
+            "FORM REVIEW DEMO",
+            "Synthetic application"
+          ],
+          "chartData": [],
+          "flow": "Read  →  Compare  →  Flag"
+        },
+        "media": [],
+        "meta": {
+          "brand": "ABC Limited",
+          "pageLabel": "",
+          "unit": "",
+          "panelTitle": "FORM REVIEW DEMO",
+          "date": "Synthetic application",
+          "empty": ""
+        }
+      },
+      "selectedVariant": "v4",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme01_page004",
+          "props": {
+            "statCount": 3
+          },
+          "contentMap": {
+            "titleTop": "presentation.title",
+            "subtitle": "presentation.summary",
+            "footnote": "presentation.takeaway",
+            "stats": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "fields": {
+                "value": "displayValue",
+                "label": "label"
+              }
+            },
+            "kicker": "presentation.coverLabels[0]",
+            "issue": "presentation.coverLabels[1]",
+            "overline": "presentation.coverLabels[0]",
+            "titleBottom": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "sticker": "presentation.coverLabels[1]"
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme01_page002",
+          "props": {
+            "pillCount": 3
+          },
+          "contentMap": {
+            "titleTop": "presentation.title",
+            "subtitle": "presentation.summary",
+            "footnote": "presentation.takeaway",
+            "pills": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "select": "labelWithValueAndSupporting"
+            },
+            "enKicker": "presentation.coverLabels[0]",
+            "titleBottom": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "meta": "presentation.coverLabels[1]"
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme01_page003",
+          "props": {
+            "tileCount": 3
+          },
+          "contentMap": {
+            "titleTop": "presentation.title",
+            "footnote": "presentation.summary",
+            "tiles": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "fields": {
+                "label": "label",
+                "value": "displayValue"
+              }
+            },
+            "kicker": "presentation.coverLabels[0]",
+            "titleBottom": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "en": "presentation.coverLabels[1]",
+            "bigNumber": "presentation.coverLabels[0]",
+            "bigLabel": "presentation.coverLabels[1]"
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "Three slides demonstrating cross-page evidence, a supplied business rule, and a clear review action",
+              "audience": "High-level management",
+              "narrativeRole": "cover",
+              "emphasis": "Visible evidence. Clear review.",
+              "rationale": "以单一主标题和非对称留白建立主张",
+              "compositionFamily": "hero"
+            },
+            "background": "dark",
+            "elements": [
+              {
+                "id": "page-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 5,
+                  "height": 1
+                },
+                "role": "kicker",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "page-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 10,
+                  "height": 3
+                },
+                "role": "title",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "hero-summary",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 6,
+                  "width": 7,
+                  "height": 2
+                },
+                "role": "subtitle",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "hero-takeaway",
+                "type": "text",
+                "grid": {
+                  "column": 9,
+                  "row": 6,
+                  "width": 4,
+                  "height": 2
+                },
+                "role": "body",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "review-flow",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 11,
+                  "height": 1
+                },
+                "role": "subtitle",
+                "tone": "accent",
+                "text": ""
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "meta.panelTitle",
+            "elements[1].text": "presentation.title",
+            "elements[2].text": "presentation.summary",
+            "elements[3].text": "presentation.takeaway",
+            "elements[4].text": "presentation.flow"
+          }
+        }
+      ]
+    },
+    {
+      "content": {
+        "presentation": {
+          "title": "Two pages. One inconsistency.",
+          "titleShort": "Two-page evidence",
+          "summary": "Page 1 selects Local Bank Account. Page 3 contains a signature in the Chinese Mainland declaration.",
+          "summaryShort": "Local account selected; Mainland declaration signed.",
+          "takeaway": "Rule: for a local account, the Mainland declaration signature and date must remain blank.",
+          "items": [
+            {
+              "id": "local",
+              "label": "Local account",
+              "value": "Selected",
+              "detail": "Page 1: local selected.",
+              "required": true,
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "Selected",
+              "valueText": "Selected",
+              "labelWithValue": "Selected · Local account",
+              "labelWithSupporting": "Local account：Page 1: Local Bank Account is checked.",
+              "labelWithValueAndSupporting": "Selected · Local account｜Page 1: Local Bank Account is checked."
+            },
+            {
+              "id": "sig",
+              "label": "Mainland signature",
+              "value": "Present",
+              "detail": "Page 3: signature present.",
+              "required": true,
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "Present",
+              "valueText": "Present",
+              "labelWithValue": "Present · Mainland signature",
+              "labelWithSupporting": "Mainland signature：Page 3: Signature and date should be blank.",
+              "labelWithValueAndSupporting": "Present · Mainland signature｜Page 3: Signature and date should be blank."
+            }
+          ],
+          "coverLabels": [
+            "CROSS-PAGE EVIDENCE"
+          ],
+          "chartData": []
+        },
+        "media": [
+          {
+            "src": "assets/user-media/local-choice.png",
+            "alt": "Page 1: local bank selected"
+          },
+          {
+            "src": "assets/user-media/declaration-signature.png",
+            "alt": "Page 3: Mainland declaration signed"
+          }
+        ],
+        "meta": {
+          "brand": "ABC Limited",
+          "pageLabel": "",
+          "unit": "",
+          "panelTitle": "CROSS-PAGE EVIDENCE",
+          "date": "",
+          "empty": ""
+        }
+      },
+      "selectedVariant": "v4",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme01_page081",
+          "props": {
+            "images": [
+              "assets/user-media/local-choice.png",
+              "assets/user-media/declaration-signature.png"
+            ],
+            "imageSlotCount": 2
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "caption": "presentation.summaryShort",
+            "panels": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "limit": 3,
+              "fields": {
+                "tag": "label",
+                "tagTone": "projectionLabel",
+                "heading": "labelWithValue",
+                "sub": "labelWithSupporting"
+              }
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 22,
+              "index": 3,
+              "truncate": true
+            },
+            "en": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 22,
+              "index": 4,
+              "truncate": true
+            }
+          },
+          "plannedImages": 2
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme01_page046",
+          "props": {
+            "pointCount": 2,
+            "statCount": 0,
+            "stats": [],
+            "images": [
+              "assets/user-media/local-choice.png",
+              "assets/user-media/declaration-signature.png"
+            ],
+            "imageSlotCount": 2
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "intro": "presentation.summary",
+            "caption": "presentation.summaryShort",
+            "points": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 2,
+              "fields": {
+                "h": "label",
+                "d": "projectionLabel"
+              }
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "en": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 29,
+              "index": 4,
+              "truncate": true
+            }
+          },
+          "plannedImages": 2
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme01_page026",
+          "props": {
+            "milestoneCount": 2,
+            "images": [
+              "assets/user-media/local-choice.png",
+              "assets/user-media/declaration-signature.png"
+            ],
+            "imageSlotCount": 2
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "intro": "presentation.summary",
+            "milestones": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 2,
+              "fields": {
+                "date": "label",
+                "round": "projectionLabel",
+                "amount": "displayValue",
+                "note": "labelWithSupporting"
+              }
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "en": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 27,
+              "index": 4,
+              "truncate": true
+            },
+            "quote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 36,
+              "index": 5,
+              "truncate": true
+            },
+            "quoteBy": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            }
+          },
+          "plannedImages": 2
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "Three slides demonstrating cross-page evidence, a supplied business rule, and a clear review action",
+              "audience": "High-level management",
+              "narrativeRole": "image",
+              "emphasis": "Rule: for a local account, the Mainland declaration signature and date must remain blank.",
+              "rationale": "Use a narrow rule column and two large document extracts to make the contradiction visible.",
+              "compositionFamily": "editorial"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "page-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 5,
+                  "height": 1
+                },
+                "role": "kicker",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "page-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 12,
+                  "height": 1
+                },
+                "role": "subtitle",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "editorial-takeaway",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 4,
+                  "height": 3
+                },
+                "tone": "accent",
+                "role": "body",
+                "text": ""
+              },
+              {
+                "id": "editorial-items",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 7,
+                  "width": 4,
+                  "height": 2
+                },
+                "ordered": false,
+                "tone": "default",
+                "items": []
+              },
+              {
+                "id": "evidence-0",
+                "type": "media",
+                "grid": {
+                  "column": 6,
+                  "row": 3,
+                  "width": 7,
+                  "height": 2
+                },
+                "src": "",
+                "alt": "",
+                "fit": "contain"
+              },
+              {
+                "id": "evidence-1",
+                "type": "media",
+                "grid": {
+                  "column": 6,
+                  "row": 5,
+                  "width": 7,
+                  "height": 4
+                },
+                "src": "",
+                "alt": "",
+                "fit": "contain"
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "meta.panelTitle",
+            "elements[1].text": "presentation.title",
+            "elements[3].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "labelWithValue",
+                "body": "detail"
+              },
+              "limit": 2
+            },
+            "elements[2].text": "presentation.takeaway",
+            "elements[4].src": "media[0].src",
+            "elements[4].alt": "media[0].alt",
+            "elements[5].src": "media[1].src",
+            "elements[5].alt": "media[1].alt"
+          }
+        }
+      ]
+    },
+    {
+      "content": {
+        "presentation": {
+          "title": "AI flags the issue for review",
+          "titleShort": "Review required",
+          "summary": "The captured result links the account choice to the misplaced signature and date.",
+          "summaryShort": "Evidence linked to a clear review action.",
+          "takeaway": "Review and correct before processing. A person confirms the action.",
+          "items": [
+            {
+              "id": "finding",
+              "label": "Rule result",
+              "value": "Review",
+              "detail": "The local selection conflicts with the declaration signature.",
+              "required": true,
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "Review",
+              "valueText": "Review",
+              "labelWithValue": "Review · Rule result",
+              "labelWithSupporting": "Rule result：The local selection conflicts with the declaration signature.",
+              "labelWithValueAndSupporting": "Review · Rule result｜The local selection conflicts with the declaration signature."
+            },
+            {
+              "id": "action",
+              "label": "Next action",
+              "value": "Correct",
+              "detail": "A reviewer confirms and corrects before processing.",
+              "required": true,
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "Correct",
+              "valueText": "Correct",
+              "labelWithValue": "Correct · Next action",
+              "labelWithSupporting": "Next action：A reviewer confirms and corrects before processing.",
+              "labelWithValueAndSupporting": "Correct · Next action｜A reviewer confirms and corrects before processing."
+            }
+          ],
+          "coverLabels": [
+            "ACTUAL DEMO RESULT",
+            "This check identifies an inconsistency, not its root cause."
+          ],
+          "chartData": []
+        },
+        "media": [
+          {
+            "src": "assets/user-media/codex-clipboard-0c4d3899-8f96-4d8b-a8c1-4dfef288293d.png",
+            "alt": "Actual AI result: review required"
+          }
+        ],
+        "meta": {
+          "brand": "ABC Limited",
+          "pageLabel": "",
+          "unit": "",
+          "panelTitle": "ACTUAL DEMO RESULT",
+          "date": "This check identifies an inconsistency, not its root cause.",
+          "empty": ""
+        }
+      },
+      "selectedVariant": "v4",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme01_page058",
+          "props": {
+            "itemCount": 3
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "note": "presentation.summaryShort",
+            "caption": "presentation.takeaway",
+            "events": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "limit": 3,
+              "fields": {
+                "date": "label",
+                "title": "projectionLabel",
+                "desc": "detail"
+              }
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "en": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 26,
+              "index": 4,
+              "truncate": true
+            },
+            "cn": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 24,
+              "index": 5,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme01_page083",
+          "props": {
+            "takeawayCount": 2
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "summary": "presentation.summary",
+            "caption": "presentation.takeaway",
+            "takeaways": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 2,
+              "fields": {
+                "tag": "label",
+                "en": "projectionLabel",
+                "text": "labelWithSupporting"
+              }
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "en": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "cn": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 24,
+              "index": 5,
+              "truncate": true
+            },
+            "bandLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme01_page009",
+          "props": {
+            "chapterCount": 3
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "caption": "presentation.summaryShort",
+            "chapters": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "limit": 3,
+              "fields": {
+                "no": "projectionOrdinal",
+                "label": "label",
+                "en": "projectionLabel",
+                "desc": "detail"
+              }
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "en": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "cn": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "Three slides demonstrating cross-page evidence, a supplied business rule, and a clear review action",
+              "audience": "High-level management",
+              "narrativeRole": "closing",
+              "emphasis": "Review and correct before processing. A person confirms the action.",
+              "rationale": "Pair the actual AI result with a short action statement; retain human review.",
+              "compositionFamily": "split"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "page-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 5,
+                  "height": 1
+                },
+                "role": "kicker",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "page-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 12,
+                  "height": 1
+                },
+                "role": "subtitle",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "split-summary",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 4,
+                  "height": 2
+                },
+                "role": "body",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "split-takeaway",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 7,
+                  "width": 4,
+                  "height": 2
+                },
+                "role": "body",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "actual-result",
+                "type": "media",
+                "grid": {
+                  "column": 5,
+                  "row": 3,
+                  "width": 8,
+                  "height": 6
+                },
+                "src": "",
+                "alt": "",
+                "fit": "contain"
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "meta.panelTitle",
+            "elements[1].text": "presentation.title",
+            "elements[2].text": "presentation.summary",
+            "elements[3].text": "presentation.takeaway",
+            "elements[4].src": "media[0].src",
+            "elements[4].alt": "media[0].alt"
+          }
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}
